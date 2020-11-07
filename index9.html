@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>registration form</title>
+    <style>
+    body{
+        background-image: url('icon6.jpg');
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+    }    
+   .wrap{
+       width: 350px;
+       margin: auto;
+       background:rgba(221, 160, 221, 0.8);
+       margin-top: 50px;
+       padding: 5px;
+   }
+form{
+    padding: 10px;
+    font-family: arial;
+    border: 1px solid white;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    background:violet;
+    color: white;
+    padding:10px;
+    border-radius: 10px;
+}
+input{
+    padding: 10px;
+    margin:5px;
+    border-radius: 5px;
+    border: none;
+}
+input[type=text],input[type=email],input[type=phonenumber],input[type=password]{
+    width: 90%;
+}
+input[type=submit]{
+    width:95%;
+    background: palevioletred;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}   
+input[type=submit]:hover{
+    background: rgb(217, 160, 223);
+}
+.message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 14px;
+    text-align: center;
+}
+.message a{
+    text-decoration: none;
+}
+        
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <form>
+        <h2>Registration Form</h2>
+        <input type="text" name="yourname" placeholder="Your name">
+        <input type="email" name="email" placeholder="Your email">
+        <input type="phonenumber" name="yournumber" placeholder="Your number">
+        <input type="password" name="yourpassword" placeholder="password">
+        <input type="password" name="conformpassword" placeholder="conform password">
+        <span style="font-size: 18px;">Choose Experience level</span>
+        <br>
+        <select name="batch">
+            <option value="Beginner">Fresher</option>
+            <option value="Intermediate">Entry level</option>   
+            <option value="Advanced">Senior</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox">I Agree to the terms and conditions
+        <br>
+        <input type="submit" value="Submit Now">
+        <p class="message">Already a member?  <a href="index8.html">Login in now</a></p>
+    </form>
+</div>
+</body>
+</html>
